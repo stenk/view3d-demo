@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+view3d {
+    display: inline-block;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #333;
+
+    .view3d-error {
+        margin-top: 200px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .control-panel {
+        position: absolute;
+        left: 0; right: 0;
+        margin: 0; padding: 0;
+        color: white;
+
+        .loading-progress {
+            float: left;
+            padding: 10px;
+            font-size: 1.3em;
+
+            .value { font-weight: bold; }
+        }
+
+        .buttons {
+            float: right;
+
+            .button {
+                cursor: pointer;
+                display: inline-block;
+                font-size: 1.5em;
+                padding: 10px;
+            }
+        }
+    }
+}
+

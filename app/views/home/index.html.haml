@@ -1,0 +1,9 @@
+%div(ng-app="view3dDemo" ng-controller="DemoCtrl")
+  %h1 view3d Demo
+
+  %ul.model-list
+    %li(ng-repeat="model in models")
+      %a(ng-click="displayModel(model)" href="\#{{ model.title }}")
+        {{ model.title }}
+
+  %view3d(src="modelSrc" scale="modelScale")
